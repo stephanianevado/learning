@@ -1,0 +1,177 @@
+/*General---------------------*/
+body {
+    margin: 50px;
+    margin-left: 50px;
+    background-image: url(../img/nutrinevado.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-color: rgb(252, 252, 255);
+}
+head {
+    margin: 50%   
+}
+.Grow{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+.lanzador-menu{
+    display: none;
+}
+.navegacion{
+    position: absolute;
+    top:-30px
+}
+.navegacion li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    border-width: 5px;
+    border-style:double;
+    border-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 8px 18px 0px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 25px;
+    color: #262626;
+    font-weight:bolder;    
+    font-style:normal;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+h2, h3{
+    font-size: 20px;
+    color: rgb(255, 140, 0);
+    font-weight: bold;    
+    font-style: normal;
+    text-decoration:none;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+}
+ul, ol {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(38, 71, 109);
+    background-color: #fff;
+    font-weight: lighter;    
+    font-style:normal;
+    text-decoration:none;
+    line-height: 1.5;
+    list-style:square;
+    list-style-position:inside;
+    border-width: 5px;
+    border-style:double;
+    border-color: #fff;
+    box-shadow: rgb(0 0 0 / 15%) 0px 8px 18px 0px;
+    box-sizing:content-box;
+    width: 150px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+@media screen and (max-width: 800px) {
+    .body {
+        width: 100%;
+        float: none;
+    }
+}
+/*Encabezado---------------------*/
+html .Logo{
+   height: 120px;
+   width: 120px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.Recetas{
+    text-align:justify;
+}
+.Hola {
+    text-align: center;
+}
+#Menu{
+   height: 120px;
+   width: 120px;
+   display:-moz-stack;
+   margin-left: auto;
+   margin-right: auto;
+   word-spacing:auto;
+   color:rgb(38, 71, 109);  
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: orangered;
+}
+a:visited{
+    color: blueviolet;
+}
+a:focus{
+    background-color: lightgray;
+}
+/*Contenido quiensoy------*/
+html .StephyNina{
+   height: 500px;
+   width: 500px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: #fff;
+}
+strong{
+    position:static;
+    left: 0;
+    right: 0;
+    z-index:auto;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    border-width: 5px;
+    border-style:double;
+    border-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 8px 18px 0px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* JS estilos*/
+@media screen and (max-width: 600px){
+    .js.navegacion{
+        max-width: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        top:43px;
+        left: 30px;
+        right: 30px;
+        background-color: #2d211f;
+    }
+    .js.navegacion a{
+        padding: 5px 10px;
+        color: #fff;
+        border-top: 1px solid rbga (255,255,255, .4);
+    }
+    .js.navegacion.menu-desplegado{
+        max-height: 200px;
+    }
+}
