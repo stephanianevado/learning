@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title id="title">
+    Technical Documentation Page
+  </title>
+</head>
+
+<body translate="no">
+  <nav id="navbar">
+    <header>JavaScript</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#beginners">Beginners</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#intermediate">Intermediate</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#advanced">Advanced</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#JavaScript_&_Java">JavaScript & Java</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#javascript_guide">JavaScript guide</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#reference">Reference</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>
+        Introduction
+      </header>
+      <article>
+        <p>
+          JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+        </p>
+        <p>
+          This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments.
+        </p>
+        <p>
+          The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). The JavaScript documentation throughout MDN is based on the latest draft versions of ECMA-262 and ECMA-402. And in cases where some proposals for new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use some of those new features.
+        </p>
+        <p>
+          Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use. I leave you an example:
+          <code>
+            <h1>What Can JavaScript Do?</h1>
+            <p id="demo">JavaScript can change HTML content.</p><button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="beginners">
+      <header>
+        Beginners
+      </header>
+      <article>
+        <p>Head over to our Learning Area JavaScript topic if you want to learn JavaScript but have no previous experience with JavaScript or programming. The complete modules available there are as follows:</p>
+        <ul>
+          <li>
+            JavaScript first steps: answers some fundamental questions such as "what is JavaScript?", "what does it look like?", and "what can it do?", along with discussing key JavaScript features such as variables, strings, numbers, and arrays.
+          </li>
+          <li>
+            JavaScript building blocks: continues our coverage of JavaScript's key fundamental features, turning our attention to commonly-encountered types of code blocks such as conditional statements, loops, functions, and events.
+          </li>
+          <li>
+            Introducing JavaScript objects: the object-oriented nature of JavaScript is important to understand if you want to go further with your knowledge of the language and write more efficient code, therefore we've provided this module to help you.
+          </li>
+          <li>
+            Asynchronous JavaScript: discusses asynchronous JavaScript, why it is important, and how it can be used to effectively handle potential blocking operations such as fetching resources from a server.
+          </li>
+          <li>
+            Client-side web APIs: explores what APIs are, and how to use some of the most common APIs you'll come across often in your development work.
+          </li>
+        </ul>
+        <p>A good example to get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:<br>
+          <code>function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="intermediate">
+      <header>
+        Intermediate
+      </header>
+      <article>
+        <p>
+        <ul>
+          <li>Understanding client-side JavaScript frameworks: are an essential part of modern front-end web development, providing developers with proven tools for building scalable, interactive web applications. This module gives you some fundamental background knowledge about how client-side frameworks work and how they fit into your toolset, before moving on to tutorial series covering some of today's most popular ones.
+          </li>
+          <li>
+            A re-introduction to JavaScript: an overview for those who think they know about JavaScript.
+          </li>
+          <li>
+            JavaScript data structures: overview of available data structures in JavaScript.
+          </li>
+          <li>
+            Equality comparisons and sameness: JavaScript provides three different value-comparison operations:<br>1. Strict equality using: <code>===</code><br>2. Loose equality using: <code>==</code><br>3. The method: <code>Object.is()</code>
+          </li>
+          <li>
+            Closures: is the combination of a function and the lexical environment within which that function was declared.
+          </li>
+        </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="advanced">
+      <header>
+        Advanced
+      </header>
+      <article>
+        <p>
+        <ul>
+          <li>
+            Inheritance and the prototype chain: explanation of the widely misunderstood and under-estimated prototype-based inheritance.
+          </li>
+          <li>
+            Strict mode: defines that you can not use any variable before initializing it. It is a restricted variant of ECMAScript 5, for faster performance and easier debugging.
+          </li>
+          <li>
+            JavaScript typed arrays: provide a mechanism for accessing raw binary data.
+          </li>
+          <li>
+            Memory Management: memory life cycle and garbage collection in JavaScript.
+          </li>
+          <li>
+            Concurrency model and Event Loop: JavaScript has a concurrency model based on an "event loop".
+          </li>
+        </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="JavaScript_&_Java">
+      <header>
+        JavaScript & Java
+      </header>
+      <article>
+        <p>
+          JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+        </p>
+        <p>
+          In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+        </p>
+        <p>
+          JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="javascript_guide">
+      <header>
+        JavaScript Guide
+      </header>
+      <article>
+        <p>A much more detailed guide to the JavaScript language, aimed at those with previous programming experience either in JavaScript or another language. You can check more informantion <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">here</a>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="reference">
+      <header>
+        Reference
+      </header>
+      <article>
+        <p>
+          All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a>
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
