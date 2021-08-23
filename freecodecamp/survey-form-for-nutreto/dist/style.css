@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html{
+  background-color: rgb(252, 252, 255);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(38, 71, 109);
+  text-align: justify;
+  font-size: 1rem;
+}
+.dAFSYs {
+    fill: currentcolor;
+    font-size: 1.25rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+#title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+
+#description{
+  text-align:center;
+}
+
+hr{
+  width: 30rem;
+  max-width: 80%;
+  border-bottom: 1px solid rgb(255, 140, 119)
+}
+
+#survey-form{
+  display: grid;
+  text-align: center;
+  padding: 0% 0%;
+  margin: 1% 35%;
+  cursor: pointer;
+  background-color: rgb(255, 140, 119);
+  border-radius:10px;
+}
+
+.form-group{
+  margin:0% 1%;
+  padding: 1% 0%;
+}
+
+#submit{
+  background-color: #4C8DD9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 10px;
+  text-transform: none;
+  border: none;
+}

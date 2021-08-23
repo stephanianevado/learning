@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body translate="no">
+  <div class="container">
+    <header class="header">
+      <svg size="4" viewBox="0 0 80 80" class="IconBase-sc-obi6k7 dAFSYs">
+        <g filter="url(#filter0_f)">
+          <circle cx="40" cy="40" r="30" fill="black" fill-opacity="0.1"></circle>
+        </g>
+        <circle cx="40" cy="40" r="30" fill="white"></circle>
+        <rect x="36.4125" y="35.6786" width="5.76039" height="13.0093" rx="2.8802" transform="rotate(-90.1655 36.4125 35.6786)" fill="#4C8DD9"></rect>
+        <rect x="28" y="39.9906" width="6.50464" height="13.0093" rx="3.25232" fill="#70B3AC" fill-opacity="0.5"></rect>
+        <rect x="28" y="39.9906" width="6.50464" height="13.0093" rx="3.25232" fill="#4C8DD9"></rect>
+        <rect x="47.514" y="36.8737" width="6.50464" height="16.1261" rx="3.25232" fill="#4C8DD9"></rect>
+        <rect x="28" y="24" width="6.50464" height="14.771" rx="3.25232" fill="#FF8C77"></rect>
+        <defs>
+          <filter id="filter0_f" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur"></feGaussianBlur>
+          </filter>
+        </defs>
+      </svg>
+      <h1 id="title">Nutreto Survey Form
+      </h1>
+      <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform.
+      </p>
+    </header>
+    <hr>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>Which option describes your role in Nutreto?</p>
+        <select id="dropdown" name="role" class="form-control" required="">
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="clinic">Clinic</option>
+          <option value="nutritionist">Nutritionist</option>
+          <option value="patient">Patient</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend Nutreto?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio">Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+      </div>
+      <div class="form-group">
+        <p>
+          What is your favorite feature of Nutreto?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label><input name="prefer" value="no-installation" type="checkbox" class="input-checkbox">No installation needed</label><br>
+        <label>
+          <input name="prefer" value="use" type="checkbox" class="input-checkbox">Easy to use</label><br>
+        <label><input name="prefer" value="secure" type="checkbox" class="input-cheackbox">Secure storage</label><br>
+        <label><input name="prefer" value="content" type="checkbox" class="input-checkbox">Share content</label><br>
+        <label><input name="prefer" value="video-calls" type="checkbox" class="input-checkbox">Schedule video calls</label><br>
+        <label><input name="prefer" value="progress" type="checkbox" class="input-checkbox">Use personal data to track progress</label><br>
+        <label><input name="prefer" value="team-work" type="checkbox" class="input-checkbox">Create a team work</label>
+      </div>
+      <div class="form-group">
+        <p>Your opinion is very important to us, if you have any questions or suggestions, feel free to share it.</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="button">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
