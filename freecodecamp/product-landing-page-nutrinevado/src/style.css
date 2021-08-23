@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@100;300&display=swap");
+
+#header-img {
+  width: 100px;
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  min-height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nav-bar li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+html {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  color: #262626;
+  background-color: rgb(252, 252, 255);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 140, 0);
+  font-size: 2em;
+}
+
+strong {
+  color: rgb(255, 140, 0);
+}
+
+hr {
+  width: 50rem;
+  max-width: 80%;
+  border-bottom: rgb(255, 140, 119);
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 5px 5px 5px 5px;
+    margin: 0% 20% 0% 20%;
+  }
+}
+
+@media (min-width: 800px) {
+  #title {
+    padding: 1px 2px 1px 2px;
+    margin: 5% 2% 1% 2%;
+  }
+}
+
+ol {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+.product {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  background-color: #b6c8c8;
+  padding: 0% 0% 2% 0%;
+  margin: 0% 25%;
+}
+
+@media (max-width: 800px) {
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+
+#submit,
+#submit-pricing1,
+#submit-pricing2,
+#submit-pricing3 {
+  background-color: rgb(255, 140, 0);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 10px;
+  text-transform: none;
+  border: none;
+}
