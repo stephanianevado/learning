@@ -13,3 +13,4 @@ At freeCodeCamp I've taken different courses for learning frontend programming. 
 * Build a technical documentation page.
 * Build a personal portfolio webpage.
 * Build a random quote machine.
+* Build a markdown previewer.
