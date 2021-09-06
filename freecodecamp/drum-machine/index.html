@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Drum Machine!</title>
+    <script>
+        function play(str) {
+            
+            if (str === "Q" || str === "q") {
+                document.getElementById('display').innerHTML = "Star Wars Intro";
+            } else if (str === "W" || str === "w") {
+                document.getElementById('display').innerHTML = "The Imperial March";
+            } else if (str === "E" || str === "e") {
+                document.getElementById('display').innerHTML = "The Force Suite";
+            } else if (str === "A" || str === "a") {
+                document.getElementById('display').innerHTML = "The Clone Army";
+            } else if (str === "S" || str === "s") {
+                document.getElementById('display').innerHTML = "Battle Over Coruscant";
+            } else if (str === "D" || str === "d") {
+                document.getElementById('display').innerHTML = "Across The Stars";
+            } else if (str === "Z" || str === "z") {
+                document.getElementById('display').innerHTML = "Padmé's Grave Suite";
+            } else if (str === "X" || str === "x") {
+                document.getElementById('display').innerHTML = "Rouge One";
+            } else if (str === "C" || str === "c") {
+                document.getElementById('display').innerHTML = "Anakin VS Obi-Wan";
+            }
+        
+            var audio = document.getElementById(str);
+            audio.play();
+        }
+
+        window.document.onkeyup = function(event) {
+            let keystroke = event.key
+            if (keystroke === "Q" || keystroke === "q") {
+                play("Q");
+            } else if (keystroke === "W" || keystroke === "w") {
+                play("W");
+            } else if (keystroke === "E" || keystroke === "e") {
+                play("E");
+            } else if (keystroke === "A" || keystroke === "a") {
+                play("A");
+            } else if (keystroke === "S" || keystroke === "s") {
+                play("S");
+            } else if (keystroke === "D" || keystroke === "d") {
+                play("D");
+            } else if (keystroke === "Z" || keystroke === "z") {
+                play("Z");
+            } else if (keystroke === "X" || keystroke === "x") {
+                play("X");
+            } else if (keystroke === "C" || keystroke === "c") {
+                play("C");
+            } else {
+                return keystroke;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="drum-machine">
+        <h1 class="text-center">Welcome! May the drum be with you</h1>
+        <div class="card my-3">
+            <div class="card-body">
+                <div class="text-center" id="display">Play me! And together we can rule the galaxy!</div>
+            </div>
+        </div>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-0" onclick="play('Q')">
+            Q
+            <audio src="./clip/Q Star Wars Intro HD 1080p.mp3" class="clip" id="Q">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-1" onclick="play('W')">
+            W
+            <audio src="./clip/W Star Wars- The Imperial March (Darth Vader's Theme).mp3" class="clip" id="W">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-2" onclick="play('E')">
+            E
+            <audio src="./clip/E Star Wars - The Force Suite (Theme).mp3" class="clip" id="E">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-3" onclick="play('A')">
+            A
+            <audio src="./clip/A Star Wars - Republic Clone Army March Complete Music Theme Remastered.mp3" class="clip"
+                id="A">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-4" onclick="play('S')">
+            S
+            <audio src="./clip/S Star Wars Episode III - Battle over Coruscant Soundtrack.mp3" class="clip" id="S">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-5" onclick="play('D')">
+            D
+            <audio src="./clip/D Star Wars Anakin And Padme Theme (Across The Stars).mp3" class="clip" id="D">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-6" onclick="play('Z')">
+            Z
+            <audio src="./clip/Z Star Wars - Padmé's Grave Suite (Theme).mp3" class="clip" id="Z">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-7" onclick="play('X')">
+            X
+            <audio src="./clip/X Your Father Would Be Proud (From Rogue One A Star Wars StoryAudio Only).mp3"
+                class="clip" id="X">
+        </button>
+        <button class="drum-pad btn btn-block btn-primary" id="drum-8" onclick="play('C')">
+            C
+            <audio src="./clip/C Star Wars Revenge of the Sith Soundtrack Anakin vs Obi-Wan, the great duel.mp3"
+                class="clip" id="C">
+        </button>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
