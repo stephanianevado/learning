@@ -13,7 +13,7 @@
     <title>Drum Machine!</title>
     <script>
         function play(str) {
-            
+
             if (str === "Q" || str === "q") {
                 document.getElementById('display').innerHTML = "Star Wars Intro";
             } else if (str === "W" || str === "w") {
@@ -33,12 +33,12 @@
             } else if (str === "C" || str === "c") {
                 document.getElementById('display').innerHTML = "Anakin VS Obi-Wan";
             }
-        
+
             var audio = document.getElementById(str);
             audio.play();
         }
 
-        window.document.onkeyup = function(event) {
+        window.document.onkeyup = function (event) {
             let keystroke = event.key
             if (keystroke === "Q" || keystroke === "q") {
                 play("Q");
