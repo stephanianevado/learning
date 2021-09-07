@@ -13,7 +13,7 @@ function play(str) {
     } else if (str === "D" || str === "d") {
         document.getElementById('display').innerHTML = "Across The Stars";
     } else if (str === "Z" || str === "z") {
-        document.getElementById('display').innerHTML = "Padmé's Grave Suite";
+        document.getElementById('display').innerHTML = "TThe First Order March";
     } else if (str === "X" || str === "x") {
         document.getElementById('display').innerHTML = "Rouge One";
     } else if (str === "C" || str === "c") {
