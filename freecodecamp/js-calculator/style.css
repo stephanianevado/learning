@@ -1,0 +1,98 @@
+.container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+}
+
+.padButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #495670;
+    color: #F64C72;
+    border: 1px solid #020c1b;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.padButton:hover{
+    border: 1px solid #F64C72;
+    color: #e6f1ff;
+    opacity: 0.8;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: #020c1b;
+    text-align: right;
+}
+
+.expression { 
+    width: 98%;
+    border: none;
+    color:#00FFFF;
+    background-color: #020c1b;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.expression::placeholder{
+    color:#00FFFF;
+}
+
+
+.answer {
+    color: #e6f1ff;
+    font-size: 20px;
+    border: none;
+    margin: 0;
+    margin-right: 10px;
+    text-align: right;
+    width: 98%;
+    background-color: black;
+}
+
+.equal{
+    grid-area: equal;
+    color: #020c1b;
+    background-color: #00FFFF;
+}
+
+.equal:hover{
+    border: 1px solid #F64C72;
+    color: #F64C72;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.dark-gray{
+    background-color: #495670;
+}
+
+.pink{
+    color: #e6f1ff;
+    background-color: #F64C72;
+}
+
+.pink:hover{
+    border: 1px solid #e6f1ff;
+    color: #e6f1ff;
+}
+
