@@ -15,3 +15,4 @@ At freeCodeCamp I've taken different courses for learning frontend programming. 
 * Build a random quote machine.
 * Build a markdown previewer.
 * Build a drum machine.
+* Build a javascript calculator.
