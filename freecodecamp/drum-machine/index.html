@@ -1,90 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Drum Machine</title>
+    <!--React setup-->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
-    <!--Style CSS-->
+    <!--Babel-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!--Link to CSS-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Stint+Ultra+Condensed&display=swap">
-    <link rel="stylesheet" href="./index.css">
-
-    <!--Style Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Drum Machine!</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body id="body">
-    <div class="container" id="drum-machine">
-        <img id="logo" src="https://imperialstyleguide.com/img/white-imperial-logo-on-black.jpg">
-        <h1 class="text-center">Welcome... May the drum be with you!</h1>
-        <div id="card" class="card my-3">
-            <div class="card-body">
-                <div class="text-center" id="display">Play me and together we can rule the galaxy!!</div>
-            </div>
-        </div>
-        <div id="drum-container" class="btn-group-vertical">
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-0" onclick="play('Q')">
-            Q
-            <audio src="./clip/Q Star Wars Intro HD 1080p.mp3" class="clip" id="Q">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-1" onclick="play('W')">
-            W
-            <audio src="./clip/W Star Wars- The Imperial March (Darth Vader's Theme).mp3" class="clip" id="W">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-2" onclick="play('E')">
-            E
-            <audio src="./clip/E Star Wars - The Force Suite (Theme).mp3" class="clip" id="E">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-3" onclick="play('A')">
-            A
-            <audio src="./clip/A Star Wars - Republic Clone Army March Complete Music Theme Remastered.mp3" class="clip"
-                id="A">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-4" onclick="play('S')">
-            S
-            <audio src="./clip/S Star Wars Episode III - Battle over Coruscant Soundtrack.mp3" class="clip" id="S">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-5" onclick="play('D')">
-            D
-            <audio src="./clip/D Star Wars Anakin And Padme Theme (Across The Stars).mp3" class="clip" id="D">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-6" onclick="play('Z')">
-            Z
-            <audio src="./clip/Z%20The%20First%20Order%20March.mp3" class="clip" id="Z">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-7" onclick="play('X')">
-            X
-            <audio src="./clip/X Your Father Would Be Proud (From Rogue One A Star Wars StoryAudio Only).mp3"
-                class="clip" id="X">
-        </button>
-        <button class="drum-pad btn btn-lg active btn-outline-danger" id="drum-8" onclick="play('C')">
-            C
-            <audio src="./clip/C Star Wars Revenge of the Sith Soundtrack Anakin vs Obi-Wan, the great duel.mp3"
-                class="clip" id="C">
-        </button>
-        </div>
-    </div>
+<body>
+    <div id="root"></div>
 
-    <!--JavaScrip-->
-    <script src="./index.js"></script>
-
-    <!--jQuery first, then Popper.js, then Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!--Link to JS-->
+    <script type="text/babel" src="./index.js"></script>
     
-    <!--Testable Freecodecamp-->
+    <!-- Testing freeCodeCamp-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
 </body>
 
 </html>

@@ -1,50 +1,111 @@
-function play(str) {
+function App() {
+    const audioClips = [
+        {
+            keyCode: 81,
+            keyTrigger: "Q",
+            id: "Heater-1",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+        },
+        {
+            keyCode: 87,
+            keyTrigger: "W",
+            id: "Heater-2",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+        },
+        {
+            keyCode: 69,
+            keyTrigger: "E",
+            id: "Heater-3",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+        },
+        {
+            keyCode: 65,
+            keyTrigger: "A",
+            id: "Heater-4",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+        },
+        {
+            keyCode: 83,
+            keyTrigger: "S",
+            id: "Clap",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+        },
+        {
+            keyCode: 68,
+            keyTrigger: "D",
+            id: "Open-HH",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+        },
+        {
+            keyCode: 90,
+            keyTrigger: "Z",
+            id: "Kick-n'-Hat",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+        },
+        {
+            keyCode: 88,
+            keyTrigger: "X",
+            id: "Kick",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+        },
+        {
+            keyCode: 67,
+            keyTrigger: "C",
+            id: "Closed-HH",
+            url: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+        }
+    ];
 
-    if (str === "Q" || str === "q") {
-        document.getElementById('display').innerHTML = "Star Wars Intro";
-    } else if (str === "W" || str === "w") {
-        document.getElementById('display').innerHTML = "The Imperial March";
-    } else if (str === "E" || str === "e") {
-        document.getElementById('display').innerHTML = "The Force Suite";
-    } else if (str === "A" || str === "a") {
-        document.getElementById('display').innerHTML = "The Clone Army";
-    } else if (str === "S" || str === "s") {
-        document.getElementById('display').innerHTML = "Battle Over Coruscant";
-    } else if (str === "D" || str === "d") {
-        document.getElementById('display').innerHTML = "Across The Stars";
-    } else if (str === "Z" || str === "z") {
-        document.getElementById('display').innerHTML = "TThe First Order March";
-    } else if (str === "X" || str === "x") {
-        document.getElementById('display').innerHTML = "Rouge One";
-    } else if (str === "C" || str === "c") {
-        document.getElementById('display').innerHTML = "Anakin VS Obi-Wan";
+    const [displayName, setDisplayName] = React.useState("Play Sound");
+
+    function handleDisplay(soundName) {
+        setDisplayName(soundName);
     }
-
-    var audio = document.getElementById(str);
-    audio.play();
+    return (
+        <div id="drum-machine">
+            <div id="display">
+                <span id="displayName">{displayName}</span>
+            </div>
+            <div className="key-pad">
+                {audioClips.map((clip) => (
+                    <Pad key={clip.id} clip={clip} setDisplay={handleDisplay} />
+                ))}
+            </div>
+        </div>
+    );
 }
 
-window.document.onkeyup = function (event) {
-    let keystroke = event.key
-    if (keystroke === "Q" || keystroke === "q") {
-        play("Q");
-    } else if (keystroke === "W" || keystroke === "w") {
-        play("W");
-    } else if (keystroke === "E" || keystroke === "e") {
-        play("E");
-    } else if (keystroke === "A" || keystroke === "a") {
-        play("A");
-    } else if (keystroke === "S" || keystroke === "s") {
-        play("S");
-    } else if (keystroke === "D" || keystroke === "d") {
-        play("D");
-    } else if (keystroke === "Z" || keystroke === "z") {
-        play("Z");
-    } else if (keystroke === "X" || keystroke === "x") {
-        play("X");
-    } else if (keystroke === "C" || keystroke === "c") {
-        play("C");
-    } else {
-        return keystroke;
+function Pad({ clip, setDisplay }) {
+    React.useEffect(() => {
+        document.addEventListener("keydown", handleKeyPress);
+        return () => {
+            document.removeEventListener("keydown", handleKeyPress);
+        };
+    }, []);
+
+    function handleKeyPress(e) {
+        if (e.keyCode === clip.keyCode) {
+            playSound();
+        }
     }
+
+    function handleName() {
+        setDisplay(clip.id);
+    }
+
+    function playSound() {
+        const audioTag = document.getElementById(clip.keyTrigger);
+        audioTag.currentTime = 0;
+        audioTag.play();
+        handleName();
+    }
+
+    return (
+        <div onClick={playSound} id={clip.id} className="drum-pad">
+            <audio className="clip" id={clip.keyTrigger} src={clip.url} />
+            <span id="keyName">{clip.keyTrigger}</span>
+        </div>
+    );
 }
+
+ReactDOM.render(<App />, document.getElementById("root"));
