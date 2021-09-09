@@ -16,3 +16,5 @@ At freeCodeCamp I've taken different courses for learning frontend programming. 
 * Build a markdown previewer.
 * Build a drum machine.
 * Build a javascript calculator.
+
+Note: I also built a star wars music machine as an alternative to the original project "drum machine", just because I'm a big fan <3!!
