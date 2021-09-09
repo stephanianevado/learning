@@ -1,6 +1,6 @@
-#Drum Machine
+#Star Wars Music Machine
 
-This is my third test after finishing the freeCodeCamp online course about Front End Development Libraries. The test had the following requirements:
+This is my alternative third test after finishing the freeCodeCamp online course about Front End Development Libraries. In this version I decided to switch up a bit to create a Star Wars Music Machine with my favorite soundtracks <3!!! The test had the following requirements:
 
 User Story #1: I should be able to see an outer container with a corresponding id="drum-machine" that contains all other elements.
 
@@ -15,3 +15,5 @@ User Story #5: When I click on a .drum-pad element, the audio clip contained in 
 User Story #6: When I press the trigger key associated with each .drum-pad, the audio clip contained in its child audio element should be triggered (e.g. pressing the Q key should trigger the drum pad which contains the string Q, pressing the W key should trigger the drum pad which contains the string W, etc.).
 
 User Story #7: When a .drum-pad is triggered, a string describing the associated audio clip is displayed as the inner text of the #display element (each string must be unique).
+
+I hope you enjoy it a lot!!! May the force be with you!!!
