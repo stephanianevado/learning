@@ -14,7 +14,7 @@ div {
 body {
   background-color: #333;
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Popins', sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -38,35 +38,32 @@ body {
 #quote-box {
   border-radius: 3px;
   position: relative;
-  margin: 8% auto auto auto;
-  width: 500px;
-  padding: 50px 50px;
-  display: block;
+  //margin:8% auto auto auto;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
   background-color: #fff;
-
   .quote-text {
     i {
       font-size: 1em;
       margin-right: 0.4em;
     }
     text-align: center;
-    width: 500px;
+    width: 450px;
     height: auto;
     clear: both;
     font-weight: 500;
     font-size: 1.75em;
   }
   .quote-author {
-    width: 500px;
+    width: 450px;
     height: auto;
     clear: both;
     padding-top: 20px;
     font-size: 1em;
     text-align: right;
   }
-}
-
-.buttons {
+  .buttons {
     width: 450px;
     margin: auto;
     display: block;
@@ -97,7 +94,7 @@ body {
         width: 40px;
       }
       &#new-quote {
-        float: left;
+        float: right;
       }
     }
   }
