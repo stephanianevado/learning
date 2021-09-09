@@ -1,0 +1,98 @@
+body {
+  font-family: 'Popins', sans-serif;
+  margin: 0;
+  border: none;
+  padding: 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+
+#logo{
+  position: fixed;
+  width: 5rem;
+  bottom: 0px;
+  right: 40px;
+  left: auto;
+  padding: 10px 10px;
+  margin: 10px;
+  z-index: 10;
+  orientation: right;
+
+}
+
+#drum-machine {
+  background-color: transparent;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 50%;
+  max-width: 300px;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  border-radius: 30px;
+  border: 3px solid #F64C72;
+}
+
+#display {
+  background-color: #020c1b;
+  position: relative;
+  top: 40px;
+  margin: auto;
+  height: 30px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #F64C72;
+  font-size: 10px;
+}
+
+#displayName {
+  position: relative;
+  top: 8px;
+  color: #F64C72;
+  font-size: 0.8rem;
+}
+
+#message{
+  position: relative;
+  margin: 30px -40px;
+  padding: 10px 0px;
+  font-size: 0.6rem;
+  color: #F64C72;
+}
+
+.key-pad {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.drum-pad {
+  width: 50px;
+  height: 40px;
+  border-radius: 7px;
+  border: 2px solid #F64C72;
+  box-shadow: 0 0 10px #F64C72;
+  background-color: black;
+}
+
+.drum-pad:active {
+  background-color: #F64C72;
+}
+
+.drum-pad: {
+  background-color: #f17b97;
+}
+
+#keyName {
+  position: relative;
+  top: 7px;
+  color: #F64C72;
+  font-size: 1.4rem;
+}
